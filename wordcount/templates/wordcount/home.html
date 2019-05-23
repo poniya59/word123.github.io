@@ -1,0 +1,14 @@
+<h1>
+    안녕안녕~ 나는 지수야~
+</h1>
+
+<h2>글자를 세주지 후후후후</h2>
+
+<a href="{% url 'about'%}">ABOUT</a>
+
+
+<form action="{% url 'count'%}" method="GET">
+    <textarea cols="40" rows="10" name="fulltext"></textarea>
+    <br>
+    <input type="submit" value="Count!" />
+</form>
