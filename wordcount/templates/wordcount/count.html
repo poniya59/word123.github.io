@@ -3,7 +3,9 @@
 <a href="{% url 'home'%}">다시하기</a>
 
 <h1>입력한 텍스트 : </h1>
+
 {{ fulltext }}
+
 <h1>단어 카운트 : </h1>
 
 {% for word, countTotal in dictionary %}

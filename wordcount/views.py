@@ -10,7 +10,7 @@ def about(request):
 
 def count(request):
     
-    full_text = request.GET.get['fulltext']
+    full_text = request.GET['fulltext']
     
     word_list = full_text.split()
 
