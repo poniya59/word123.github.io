@@ -1,14 +1,38 @@
-<h1>
-    안녕안녕~ 나는 지수야~
-</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>word 세기</title>
+        <style>
+            p {	
+                font-family : '맑은 고딕';
+	            font-size : 18px;
+                color:black;
+            }
+            h1{
+                font-family : '맑은 고딕';
+                color : blue;
+            }
+            #back {background-color:gainsboro;}
+            .contents {font-size : 45px;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="back" class="contents">안녕 안녕~ 이건 글자를 세주는 거야~~</h1>
+        </header><br><br>
+            
+        <p>자 한번 너의 <sup>문장</sup>을 넣어보시게</p><br><br>
+            
+        <a href="{% url 'about'%}">ABOUT</a>
+                
+                
+        <form action="{% url 'count'%}" method="GET">
+            <textarea cols="100" rows="20" name="fulltext"></textarea>
+            <br>
+            <input type="submit" value="Count!" />
+        </form>
+                
+    </body>
 
-<h2>글자를 세주지 후후후후</h2>
-
-<a href="{% url 'about'%}">ABOUT</a>
-
-
-<form action="{% url 'count'%}" method="GET">
-    <textarea cols="40" rows="10" name="fulltext"></textarea>
-    <br>
-    <input type="submit" value="Count!" />
-</form>
+</html>
